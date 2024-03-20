@@ -3,6 +3,6 @@
 
 # Team Members
 Anushka Sharma,
-Visheh Goel,
-Mani Mehnidratta,
+Vishesh Goel,
+Mani Mehndiratta,
 Yogesh Choudhary
