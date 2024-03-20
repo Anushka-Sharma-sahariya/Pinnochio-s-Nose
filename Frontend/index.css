@@ -1,0 +1,109 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  background-color: transparent;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+}
+
+nav a:hover {
+  color: #ffc107;
+  border-color: #ffc107;
+}
+
+.content-container {
+  position: relative;
+  z-index: 0;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  flex-direction: column;
+}
+
+#fileInput {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid #6c757d;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#output {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #6c757d;
+}
+
+#firSection {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+#firSection h2 {
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+#firForm input[type="text"],
+#firForm input[type="email"],
+#firForm textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#firForm textarea {
+  height: 100px;
+}
+
+#firForm button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #343a40;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#firForm button:hover {
+  background-color: #212529;
+}

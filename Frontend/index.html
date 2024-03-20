@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fake Image Detection</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Pinncohio's Nose</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <div class="container">
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" style="color: white"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" style="color: white"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="login.html" style="color: white"
+                >User Login</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="user signup.html" style="color: white"
+                >User Signup</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="owner login.html" style="color: white"
+                >Owner Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="content-container">
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <input
+              type="file"
+              id="fileInput"
+              class="form-control mb-3"
+              accept="image/*"
+            />
+            <div id="output" class="text-center"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div id="firSection">
+              <h2>Register FIR</h2>
+              <form
+                id="firForm"
+                action="https://cybercrime.gov.in/Webform/FAQ.aspx">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="reason"
+                    placeholder="Reason for FIR"
+                    rows="3"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Submit FIR
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const fileInput = document.getElementById("fileInput");
+      const outputDiv = document.getElementById("output");
+      const firSection = document.getElementById("firSection");
+      const firForm = document.getElementById("firForm");
+
+      fileInput.addEventListener("change", (event) => {
+        const file = event.target.files[0];
+        const reader = new FileReader();
+
+        reader.onload = (e) => {
+          const img = new Image();
+          img.src = e.target.result;
+          img.onload = () => {
+            const isFake = detectFakeImage(img);
+            outputDiv.textContent = isFake
+              ? "This image might be fake."
+              : "This image seems real.";
+          };
+        };
+
+        reader.readAsDataURL(file);
+      });
+
+      firForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const reason = document.getElementById("reason").value;
+
+        // Here you can implement logic to submit the FIR data to your backend or any desired action
+        console.log("FIR Submitted:");
+        console.log("Name:", name);
+        console.log("Email:", email);
+        console.log("Reason:", reason);
+
+        // For demonstration purposes, you can display a confirmation message or redirect the user
+        alert("FIR submitted successfully.");
+      });
+
+      function detectFakeImage(image) {
+        // Your fake image detection logic goes here
+        // For the sake of example, let's say we're checking if the image has been digitally manipulated
+        // This example simply checks if the image width or height is too small
+        const minWidth = 50;
+        const minHeight = 50;
+
+        return image.width < minWidth || image.height < minHeight;
+      }
+    </script>
+  </body>
+</html>
