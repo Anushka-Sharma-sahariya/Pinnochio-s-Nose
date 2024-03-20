@@ -13,7 +13,8 @@ Yogesh Choudhary
 
 Activity Diagram:-
 
-<img width="366" alt="Screenshot 2024-03-20 at 9 37 11 PM" src="https://github.com/Anushka-Sharma-sahariya/Pinnochio-s-Nose/assets/142217606/9e162280-75fb-40a5-b2b7-4b4673763f86">
+![activity](https://github.com/Anushka-Sharma-sahariya/Pinnochio-s-Nose/assets/142217606/f22e56f7-0b09-4492-8280-a0ff56fca3d0)
+
 
 Sequence Diagram:-
 
