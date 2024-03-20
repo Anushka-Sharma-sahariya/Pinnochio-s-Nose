@@ -9,7 +9,8 @@ Yogesh Choudhary
 
 #Use Case Diagram
 
-<img width="435" alt="Screenshot 2024-03-20 at 9 37 05 PM" src="https://github.com/Anushka-Sharma-sahariya/Pinnochio-s-Nose/assets/142217606/50cccb16-f8cf-4aac-81e3-de2e1917ebae">
+<img width="452" alt="image" src="https://github.com/Anushka-Sharma-sahariya/Pinnochio-s-Nose/assets/142217606/33ce7db6-384f-4ca0-8629-77fd28558ed3">
+
 
 Activity Diagram:-
 
@@ -18,6 +19,7 @@ Activity Diagram:-
 
 Sequence Diagram:-
 
-<img width="345" alt="Screenshot 2024-03-20 at 9 37 44 PM" src="https://github.com/Anushka-Sharma-sahariya/Pinnochio-s-Nose/assets/142217606/af4cf04c-0864-4294-bf07-62fe27d5ca81">
+<img width="431" alt="image" src="https://github.com/Anushka-Sharma-sahariya/Pinnochio-s-Nose/assets/142217606/3e0e83d9-5410-49c2-ba6b-fbd3dff31c39">
+
 
 
