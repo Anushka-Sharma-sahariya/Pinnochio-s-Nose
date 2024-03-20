@@ -12,9 +12,11 @@ Yogesh Choudhary
 <img width="435" alt="Screenshot 2024-03-20 at 9 37 05 PM" src="https://github.com/Anushka-Sharma-sahariya/Pinnochio-s-Nose/assets/142217606/50cccb16-f8cf-4aac-81e3-de2e1917ebae">
 
 Activity Diagram:-
+
 <img width="366" alt="Screenshot 2024-03-20 at 9 37 11 PM" src="https://github.com/Anushka-Sharma-sahariya/Pinnochio-s-Nose/assets/142217606/9e162280-75fb-40a5-b2b7-4b4673763f86">
 
 Sequence Diagram:-
+
 <img width="345" alt="Screenshot 2024-03-20 at 9 37 44 PM" src="https://github.com/Anushka-Sharma-sahariya/Pinnochio-s-Nose/assets/142217606/af4cf04c-0864-4294-bf07-62fe27d5ca81">
 
 
