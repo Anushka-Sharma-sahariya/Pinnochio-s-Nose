@@ -5,4 +5,4 @@
 Anushka Sharma,
 Visheh Goel,
 Mani Mehnidratta,
-Yogesh Choudhary,
+Yogesh Choudhary
