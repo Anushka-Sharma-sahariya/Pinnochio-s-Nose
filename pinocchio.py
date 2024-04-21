@@ -57,6 +57,6 @@ if uploaded_file is not None:
 
     predicted_class = preprocess_and_predict_image(image)
 
-    st.markdown(f"<h1 style='font-size: 32px; font-weight: bold;'>The Image is {predicted_class}</h1>", unsafe_allow_html=True)
+    st.markdown(f"<h1 style='font-size: 40px; font-weight: bold;'>The Image is {predicted_class}</h1>", unsafe_allow_html=True)
     if predicted_class == "FAKE":
-        st.markdown("[To File A Complaint]](https://docs.google.com/forms/your_form_url)")
+        st.markdown("<p style='font-size:30px; font-weight: medium;'><a href='https://cybercrime.gov.in/Webform/Crime_AuthoLogin.aspx' target='_blank'>File A Complaint</a></p>", unsafe_allow_html=True)
